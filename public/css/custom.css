@@ -1,0 +1,19 @@
+.panel {
+transition: max-height 0.2s ease-out;
+}
+
+.accordion::after, .active::after {
+font-size: 25px;
+color: #87B04A;
+position: absolute;
+right: 15px;
+top: 50%;
+transform: translateY(-50%);
+}
+.accordion::after {
+content: '+';
+
+}
+.active::after {
+content: "-";
+}
